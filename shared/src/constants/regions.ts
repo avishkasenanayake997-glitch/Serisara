@@ -1,0 +1,47 @@
+// ============================================================
+// Sri Lanka Regions (Provinces & Key Districts)
+// ============================================================
+
+export const REGIONS = [
+  // Provinces
+  { name: 'Western Province', slug: 'western-province', parent: null },
+  { name: 'Central Province', slug: 'central-province', parent: null },
+  { name: 'Southern Province', slug: 'southern-province', parent: null },
+  { name: 'Northern Province', slug: 'northern-province', parent: null },
+  { name: 'Eastern Province', slug: 'eastern-province', parent: null },
+  { name: 'North Western Province', slug: 'north-western-province', parent: null },
+  { name: 'North Central Province', slug: 'north-central-province', parent: null },
+  { name: 'Uva Province', slug: 'uva-province', parent: null },
+  { name: 'Sabaragamuwa Province', slug: 'sabaragamuwa-province', parent: null },
+  // Key Districts / Areas
+  { name: 'Colombo', slug: 'colombo', parent: 'western-province' },
+  { name: 'Gampaha', slug: 'gampaha', parent: 'western-province' },
+  { name: 'Kandy', slug: 'kandy', parent: 'central-province' },
+  { name: 'Nuwara Eliya', slug: 'nuwara-eliya', parent: 'central-province' },
+  { name: 'Matale', slug: 'matale', parent: 'central-province' },
+  { name: 'Galle', slug: 'galle', parent: 'southern-province' },
+  { name: 'Matara', slug: 'matara', parent: 'southern-province' },
+  { name: 'Hambantota', slug: 'hambantota', parent: 'southern-province' },
+  { name: 'Jaffna', slug: 'jaffna', parent: 'northern-province' },
+  { name: 'Trincomalee', slug: 'trincomalee', parent: 'eastern-province' },
+  { name: 'Batticaloa', slug: 'batticaloa', parent: 'eastern-province' },
+  { name: 'Ampara', slug: 'ampara', parent: 'eastern-province' },
+  { name: 'Kurunegala', slug: 'kurunegala', parent: 'north-western-province' },
+  { name: 'Puttalam', slug: 'puttalam', parent: 'north-western-province' },
+  { name: 'Anuradhapura', slug: 'anuradhapura', parent: 'north-central-province' },
+  { name: 'Polonnaruwa', slug: 'polonnaruwa', parent: 'north-central-province' },
+  { name: 'Badulla', slug: 'badulla', parent: 'uva-province' },
+  { name: 'Ella', slug: 'ella', parent: 'uva-province' },
+  { name: 'Ratnapura', slug: 'ratnapura', parent: 'sabaragamuwa-province' },
+  { name: 'Sigiriya', slug: 'sigiriya', parent: 'central-province' },
+  { name: 'Dambulla', slug: 'dambulla', parent: 'central-province' },
+  { name: 'Mirissa', slug: 'mirissa', parent: 'southern-province' },
+  { name: 'Unawatuna', slug: 'unawatuna', parent: 'southern-province' },
+  { name: 'Arugam Bay', slug: 'arugam-bay', parent: 'eastern-province' },
+  { name: 'Negombo', slug: 'negombo', parent: 'western-province' },
+  { name: 'Bentota', slug: 'bentota', parent: 'southern-province' },
+  { name: 'Hikkaduwa', slug: 'hikkaduwa', parent: 'southern-province' },
+  { name: 'Yala', slug: 'yala', parent: 'southern-province' },
+  { name: 'Udawalawe', slug: 'udawalawe', parent: 'sabaragamuwa-province' },
+  { name: 'Adam\'s Peak', slug: 'adams-peak', parent: 'sabaragamuwa-province' },
+] as const;
