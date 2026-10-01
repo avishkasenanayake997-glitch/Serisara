@@ -37,9 +37,6 @@ export async function updateSession(request: NextRequest) {
   const isProtectedPath =
     pathname.startsWith('/dashboard') ||
     pathname.startsWith('/profile') ||
-    pathname.startsWith('/trips') ||
-    pathname.startsWith('/bookings') ||
-    pathname.startsWith('/favorites') ||
     pathname.startsWith('/admin');
 
   if (isProtectedPath && !user) {
