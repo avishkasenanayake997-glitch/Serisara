@@ -1,6 +1,7 @@
 import { Router } from 'express';
 import healthRoutes from './health.routes';
 import authRoutes from './auth.routes';
+import adminUserRoutes from './admin-user.routes';
 
 // ============================================================
 // Route Aggregator
@@ -14,7 +15,9 @@ router.use('/health', healthRoutes);
 
 // Auth & Profile
 router.use('/auth', authRoutes);
-// router.use('/admin/users', adminUserRoutes);
+
+// Admin User Management
+router.use('/admin/users', adminUserRoutes);
 // router.use('/destinations', destinationRoutes);
 // router.use('/accommodations', accommodationRoutes);
 // router.use('/experiences', experienceRoutes);
