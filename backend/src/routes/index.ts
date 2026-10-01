@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import healthRoutes from './health.routes';
+import authRoutes from './auth.routes';
 
 // ============================================================
 // Route Aggregator
@@ -11,8 +12,8 @@ const router = Router();
 // Health check
 router.use('/health', healthRoutes);
 
-// Future module routes will be registered here:
-// router.use('/auth', authRoutes);
+// Auth & Profile
+router.use('/auth', authRoutes);
 // router.use('/admin/users', adminUserRoutes);
 // router.use('/destinations', destinationRoutes);
 // router.use('/accommodations', accommodationRoutes);
